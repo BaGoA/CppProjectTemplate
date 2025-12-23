@@ -29,7 +29,7 @@ def init(build_type: str):
     ''' Initialization of cmake project with ninja build system '''
     build_dir: str = get_build_dir(build_type)
 
-    cmake_config_command = ["cmake", "-B", build_dir, "-G", "Ninja", "-DCMAKE_BUILD_TYPE=" + build_type]
+    cmake_config_command = ["cmake", "-B", build_dir, "-G", "Ninja", "-DCMAKE_BUILD_TYPE=" + build_type, "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON"]
     _, message = run_command(cmake_config_command)
 
     print(message)

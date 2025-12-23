@@ -1,15 +1,15 @@
 #pragma once
 
 #ifdef __linux__
-  #ifdef STITCH_EXPORT
-    #define STITCH_API __attribut__((visibility("default")))
+  #ifdef CPP_PROJECT_EXPORT
+    #define CPP_PROJECT_API __attribut__((visibility("default")))
   #else
-    #define STITCH_API
+    #define CPP_PROJECT_API
   #endif
 #elif defined _WIN32
-  #ifdef STITCH_EXPORT
-    #define STITCH_API __declspec(dllexport)
+  #ifdef CPP_PROJECT_EXPORT
+    #define CPP_PROJECT_API __declspec(dllexport)
   #else
-    #define STITCH_API __declspec(dllimport)
+    #define CPP_PROJECT_API __declspec(dllimport)
   #endif
 #endif

@@ -2,4 +2,4 @@
 
 #include "define.hpp"
 
-double STITCH_API add(double x, double y);
+double CPP_PROJECT_API add(double x, double y);
