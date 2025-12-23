@@ -16,6 +16,8 @@ python bs.py build debug
 ```
 This command build the project by running cmake build in _build/debug_ directory following by cmake install in _bin_ directory.
 
+If we want build it in release mode, you replace _debug_ by _release_ in above command.
+
 ## Test
 Test of CppProjectTemplate is made by [Catch2](https://github.com/catchorg/Catch2).
 
